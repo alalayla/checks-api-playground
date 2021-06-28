@@ -1,9 +1,8 @@
 name: DEPLOYMENT
 
 on:
-  check_run:
-    branches: [master]
-    types: [completed]
+  repository_dispatch:
+    types: [feature_test]
 
 jobs:
   debug:
