@@ -6,6 +6,8 @@ on:
     types: [completed]
 
 jobs:
-  steps:
-    - name: Debug
-      run: echo 'ok'
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug
+        run: echo 'ok'
