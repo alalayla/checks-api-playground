@@ -1,0 +1,11 @@
+name: DEPLOYMENT
+
+on:
+  check_run:
+    branches: [master]
+    types: [completed]
+
+jobs:
+  steps:
+    - name: Debug
+      run: echo 'ok'
